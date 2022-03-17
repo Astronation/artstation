@@ -32,7 +32,7 @@ https://astronation.world/stations/artstation
 2. Votes on accepting NFTs for showcase (metadata: commision, min auction, buy now)
 3. Votes on removing NFTs from showcase (or should this be automatic)
 
-### Automatic
+### Automatic processes of the station
 1. Preparing NFT showcase assets and storing them in Arweave
 2. Local NFT showcase assets cache handling in VR clients.
 
@@ -44,22 +44,15 @@ https://astronation.world/stations/artstation
 - (If not) Run in terminal `npm run build:tailwind` (each time you add a new class, a class that does not exist in `src/assets/styles/tailwind.css`, you will need to run this command)
 - (If not) Run in terminal `npm run serve`
 
+## Deployment to Arweave
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+1. Install [arkb](https://github.com/textury/arkb) - `npm install -g arkb`
+2. Lint and fix files - `npm run lint`
+3. Build the distribution package `npm run build`
 
 ### Customize design
+
 1. [Vue Notus](https://github.com/creativetimofficial/vue-notus) is built with over frontend 120 components, giving you the freedom of choosing and combining. All components can take variations in colors, that you can easily modify using Tailwind CSS classes (NOTE: each time you add a new class, a class that does not exist in `src/assets/styles/tailwind.css`, you will need to compile again tailwind).
 
 2. See [Vue.js Configuration Reference](https://cli.vuejs.org/config/)
 
-## Deployment to Arweave
-
-...

@@ -8,7 +8,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url('/artstation_abstract.jpg');
+            background-image: url('./artstation_abstract.jpg');
           "
         >
           <span
@@ -169,8 +169,8 @@
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-800"
               >
                 <img
-                  alt="..."
-                  src="/artstation_welcome.jpg"
+                  alt="Welcome to ArtStation"
+                  src="../assets/img/artstation_welcome.jpg"
                   class="w-full align-middle rounded-t-lg"
                 />
                 <blockquote class="relative p-8 mb-4">
@@ -235,7 +235,7 @@
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
-                src="/artstation_concept.jpg"
+                src="../assets/img/artstation_concept.jpg"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
