@@ -3,7 +3,7 @@
 This is the source code automating the processes of ArtStation - the first star station in the virtual world of Astronation. 
 ArtStation is showcasing and trading visual NFTs in the metaverse, while integrating several blockchains 
 
-https://astronation.world/stations/artstation
+https://astronation.world/entities/a883f9a1-b90a-4a0a-84a0-e4818e5ce217
 
 ## Key components
 1. [Vue Notus template](https://github.com/creativetimofficial/vue-notus) from [Creative Tim](https://www.creative-tim.com/)

@@ -1,0 +1,18 @@
+{
+  "short_name": "ArtStation",
+  "name": "ArtStation - art in space",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "apple-icon.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}
