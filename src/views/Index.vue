@@ -8,7 +8,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url('./artstation_abstract.jpg');
+            background-image: url('artstation_abstract.jpg');
           "
         >
           <span
@@ -170,7 +170,7 @@
               >
                 <img
                   alt="Welcome to ArtStation"
-                  src="../assets/img/artstation_welcome.jpg"
+                  :src="artstationWelcome"
                   class="w-full align-middle rounded-t-lg"
                 />
                 <blockquote class="relative p-8 mb-4">
@@ -235,7 +235,7 @@
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
-                src="../assets/img/artstation_concept.jpg"
+                :src="artstationConcept"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -277,264 +277,82 @@
             </div>
           </div>
           <div class="flex flex-wrap">
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLfo5DCFGgHTrEkgvPKmgEC3koPS3h8hojsGh4od5BcFuBgQmPyT?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://realdigitalize.com/"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">Digitalize</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Founding artist
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLg2KY9qZ44GFxcMj7QKdSfgcZeEQNYtDt7gHNw5NqRV1YsZ215A?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://rdgrouphoustonoffice.threadless.com/"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">RDGroupRome</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Founding artist
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLi56ZRdvCAkfh5GJN9dBgUzviFt96nQmdi25fK6cFzFYyRaP493?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://diamondapp.com/u/Xandertoshi"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">Xandertoshi</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Founding artist
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLfuFvmoDWNyEV1y1ZHMqLqj77wfa2c5Wb1MpfjfYFavmuyKQGCz?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://diamondapp.com/u/fizzler"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">fizzler</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Founding artist
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLfo5DCFGgHTrEkgvPKmgEC3koPS3h8hojsGh4od5BcFuBgQmPyT?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="Digitalize"
+              role="Founding Artist"
+              link="https://realdigitalize.com/"
+            ></founding-crew-box>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLg2KY9qZ44GFxcMj7QKdSfgcZeEQNYtDt7gHNw5NqRV1YsZ215A?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="RDGroupRome"
+              role="Founding Artist"
+              link="https://rdgrouphoustonoffice.threadless.com/"
+            ></founding-crew-box>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLi56ZRdvCAkfh5GJN9dBgUzviFt96nQmdi25fK6cFzFYyRaP493?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="Xandertoshi"
+              role="Founding Artist"
+              link="https://diamondapp.com/u/Xandertoshi"
+            ></founding-crew-box>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLfuFvmoDWNyEV1y1ZHMqLqj77wfa2c5Wb1MpfjfYFavmuyKQGCz?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="fizzler"
+              role="Founding Artist"
+              link="https://diamondapp.com/u/fizzler"
+            ></founding-crew-box>
           </div>
           <div class="flex flex-wrap mt-12">
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLi2y6Y84yVrP8E59B5daneyLSt9sNbkdgx485zswkt1BF43yxok?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://diamondapp.com/u/thetokenized"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">TheTokenized</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Founding artist
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLgiiAzrUppCAKDtrm7sMP2vjAguo4VBEpcTN2JPx1hXBY94SKQk?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://diamondapp.com/u/falafeldude"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">falafeldude</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Falafel delivery
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLfjp1xGV7SZVEWW5YVSGYh5w6KWjY28woi8hcNh1BjJx5nxkPxt?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://diamondapp.com/u/Bringemvaught"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">Bringemvaught</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Rocket fuel & support
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLhUqqqDiKw9zvfzShyKQbqETxTFdvVM8vzrjwSRw42V2M8XLx7G?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://diamondapp.com/u/Aikon"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">Aikon</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Rocket fuel & support
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLi2y6Y84yVrP8E59B5daneyLSt9sNbkdgx485zswkt1BF43yxok?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="TheTokenized"
+              role="Founding Artist"
+              link="https://diamondapp.com/u/thetokenized"
+            ></founding-crew-box>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLgiiAzrUppCAKDtrm7sMP2vjAguo4VBEpcTN2JPx1hXBY94SKQk?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="falafeldude"
+              role="Falafel delivery"
+              link="https://diamondapp.com/u/falafeldude"
+            ></founding-crew-box>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLfjp1xGV7SZVEWW5YVSGYh5w6KWjY28woi8hcNh1BjJx5nxkPxt?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="Bringemvaught"
+              role="Rocket fuel & support"
+              link="https://diamondapp.com/u/Bringemvaught"
+            ></founding-crew-box>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLhUqqqDiKw9zvfzShyKQbqETxTFdvVM8vzrjwSRw42V2M8XLx7G?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="Aikon"
+              role="Rocket fuel & support"
+              link="https://diamondapp.com/u/Aikon"
+            ></founding-crew-box>
           </div>
           <div class="flex flex-wrap mt-12">
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLhewEKBC33ckoZftky42SWBSpdW9NWDCyAmLyoMs2jCr6VN1aPL?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://diamondapp.com/u/JamesHarbal"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">JamesHarbal</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Rocket fuel & support
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLg1xTdgWFS1Lw1EqYhLhmqSj3WV5eKRJWE1TgCghR25d9usgt5u?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://diamondapp.com/u/InURfeelz2"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">InURfeelz2</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Rocket fuel & support
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLgU67opDhT9bTPsqvue9QmyJLDHRZrSj77cF3P4yYDndmad9Wmx?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://diamondapp.com/u/diamondhands"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">diamondhands</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Adding NFTs to Deso
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  src="https://love4src.com/api/v0/get-single-profile-picture/BC1YLhwpmWkgk2iM9yTSxzgUVhYjgessSPTiVHkkK9pMrhweqJnWrvK?fallback=https://love4src.com/assets/img/default_profile_pic.png"
-                  class="shadow-lg rounded-lg mx-auto max-w-120-px"
-                />
-                <a 
-                  href="https://diamondapp.com/u/kanshi"
-                  target="_blank" 
-                >
-                  <div class="pt-6 text-center">
-                    <h5 class="text-xl font-bold">kanshi</h5>
-                    <p
-                      class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
-                    >
-                      Station commander
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLhewEKBC33ckoZftky42SWBSpdW9NWDCyAmLyoMs2jCr6VN1aPL?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="JamesHarbal"
+              role="Rocket fuel & support"
+              link="https://diamondapp.com/u/JamesHarbal"
+            ></founding-crew-box>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLg1xTdgWFS1Lw1EqYhLhmqSj3WV5eKRJWE1TgCghR25d9usgt5u?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="InURfeelz2"
+              role="Rocket fuel & support"
+              link="https://diamondapp.com/u/InURfeelz2"
+            ></founding-crew-box>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLgU67opDhT9bTPsqvue9QmyJLDHRZrSj77cF3P4yYDndmad9Wmx?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="diamondhands"
+              role="Adding NFTs to Deso"
+              link="https://diamondapp.com/u/diamondhands"
+            ></founding-crew-box>
+            <founding-crew-box
+              profile-pic="https://love4src.com/api/v0/get-single-profile-picture/BC1YLhwpmWkgk2iM9yTSxzgUVhYjgessSPTiVHkkK9pMrhweqJnWrvK?fallback=https://love4src.com/assets/img/default_profile_pic.png"
+              nickname="kanshi"
+              role="Flight captain"
+              link="https://diamondapp.com/u/kanshi"
+            ></founding-crew-box>
           </div>
         </div>
       </section>
@@ -643,11 +461,23 @@
 <script>
 import Navbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
+import FoundingCrewBox from "@/components/Team/DefaultBox.vue";
+
+import artstationConcept from "@/assets/img/artstation_concept.jpg";
+import artstationWelcome from "@/assets/img/artstation_welcome.jpg";
 
 export default {
+  data() {
+    return {
+      artstationConcept,
+      artstationWelcome
+    };
+
+  },
   components: {
     Navbar,
     FooterComponent,
+    FoundingCrewBox
   },
 };
 </script>
