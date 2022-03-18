@@ -44,11 +44,15 @@ https://astronation.world/entities/a883f9a1-b90a-4a0a-84a0-e4818e5ce217
 - (If not) Run in terminal `npm run build:tailwind` (each time you add a new class, a class that does not exist in `src/assets/styles/tailwind.css`, you will need to run this command)
 - (If not) Run in terminal `npm run serve`
 
-## Deployment to Arweave
+## Deployment process
 
-1. Install [arkb](https://github.com/textury/arkb) - `npm install -g arkb`
-2. Lint and fix files - `npm run lint`
-3. Build the distribution package `npm run build`
+1. Lint and fix files - `npm run lint`
+1. *One time*: Install [arkb](https://github.com/textury/arkb) `npm install -g arkb`
+1. *One time*: Link your Arweave wallet with arkb `arkb ws path\to\wallet.json`
+1. Update the version number in `package.json`
+1. Build the distribution package `npm run build`
+1. Upload the `dist` folder `arkb deploy ./dist --bundle --license MIT --tag-name App-Name --tag-value ArtStation --tag-name App-Version --tag-value 0.1.2`
+1. Commit the deployed url and build version `git commit -am"0.1.2 - https://arweave.net/jjFglnX2Lcs86n2OhnkkDsbISP4PwIJg9W93mOmN_h8"`
 
 ### Customize design
 
