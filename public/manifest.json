@@ -3,12 +3,12 @@
   "name": "ArtStation - art in space",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "<%= BASE_URL %>favicon.ico",
       "sizes": "64x64",
       "type": "image/x-icon"
     },
     {
-      "src": "apple-icon.png",
+      "src": "<%= BASE_URL %>apple-icon.png",
       "type": "image/png",
       "sizes": "76x76"
     }
