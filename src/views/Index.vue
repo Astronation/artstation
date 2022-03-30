@@ -8,7 +8,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url('./artstation_abstract.jpg');
+            background-image: url('https://5tukodaujyktpifher2u3xdsjrl3c5kbd4aptq6kslcutmbc.arweave.net/7OinDBROFTegpyR1Tdx_yTFexdUEfAPnDypL_FSbAiU');
           "
         >
           <span
@@ -170,7 +170,7 @@
               >
                 <img
                   alt="Welcome to ArtStation"
-                  :src="artstationWelcome"
+                  src="https://rcvp3xou4myzl4cpcvoz6z3ooetmlpmwbxclfu5aiuaicnb2km.arweave.net/iKr93dTjMZXwTxVdn2ducSbFvZY-NxLLToEUAgTQ6Uw"
                   class="w-full align-middle rounded-t-lg"
                 />
                 <blockquote class="relative p-8 mb-4">
@@ -235,7 +235,7 @@
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
-                :src="artstationConcept"
+                src="https://do3xrgwkawl455j7cjm4ijcwujhcnpunktzcl5synnwumogk3a.arweave.net/G7d4msoFl-871PxJZxCRWok4mvo1U8iX2WGttRjjK2M"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -463,17 +463,8 @@ import Navbar from "@/components/Navbars/IndexNavbar.vue";
 import FooterComponent from "@/components/Footers/Footer.vue";
 import FoundingCrewBox from "@/components/Team/DefaultBox.vue";
 
-import artstationConcept from "@/assets/img/artstation_concept.jpg";
-import artstationWelcome from "@/assets/img/artstation_welcome.jpg";
 
 export default {
-  data() {
-    return {
-      artstationConcept,
-      artstationWelcome
-    };
-
-  },
   components: {
     Navbar,
     FooterComponent,
