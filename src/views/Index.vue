@@ -21,18 +21,11 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Are you ready for NFTs in space?
+                  Ready for NFTs in space?
                 </h1>
                 <p class="mt-4 text-lg text-blueGray-200">
-                  ArtStation is the 1st star station in the virtual world of 
-                  <a
-                    href="https://astronation.world/?ref=artstation"
-                    class="text-blueGray-300"
-                    target="_blank"
-                  >
-                    Astronation
-                  </a>
-                  showcasing NFTs to its visitors, on the orbit of moon Eir.
+                  The 1st Profit Sharing Community in the metaverse <br/>
+                  showcasing and selling NFTs in virtual reality.
                 </p>
               </div>
               <div class="mt-12">
@@ -48,7 +41,7 @@
                   class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                   target="_blank"
                 >
-                  Community activity
+                  Token activity
                 </a>
               </div>
             </div>

@@ -35,6 +35,14 @@
             </li>
             <li>
               <a
+                href="https://community.xyz/#gkYwvqQPFdQVvWwkZbhhaGBG9AYcnc1DOHQwngsV_MA"
+                class="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
+              >
+                Community
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://github.com/Astronation/artstation?ref=artstation-footer"
                 class="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
               >

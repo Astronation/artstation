@@ -34,7 +34,7 @@
           <li class="flex items-center">
             <a
               class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fastronation.world%2Fstations%2Fa883f9a1-b90a-4a0a-84a0-e4818e5ce217%23%2F"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fastronation.world%2Fstations%2Fartstation"
               target="_blank"
             >
               <i class="text-blueGray-400 fab fa-facebook text-lg leading-lg" />
@@ -45,7 +45,7 @@
           <li class="flex items-center">
             <a
               class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
-              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fastronation.world%2Fstations%2Fa883f9a1-b90a-4a0a-84a0-e4818e5ce217%23%2F&text=Check%20the%20largest%20NFT%20marketplace%20in%20the%20universe!%20"
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fastronation.world%2Fstations%2Fartstation&text=Check%20the%20first%20PSC%20in%20the%20metaverse!%20"
               target="_blank"
             >
               <i class="text-blueGray-400 fab fa-twitter text-lg leading-lg" />
@@ -66,6 +66,17 @@
           <li class="flex items-center">
             <a
               class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
+              href="https://discord.gg/NJQeACHgjY"
+              target="_blank"
+            >
+              <i class="text-blueGray-400 fab fa-discord text-lg leading-lg" />
+              <span class="lg:hidden inline-block ml-2">Discord</span>
+            </a>
+          </li>
+          <!--
+          <li class="flex items-center">
+            <a
+              class="hover:text-blueGray-500 text-blueGray-700 px-3 py-2 flex items-center text-xs uppercase font-bold"
               href="#whitepaper-url"
             >
               <i
@@ -74,6 +85,7 @@
               Whitepaper
             </a>
           </li>
+        -->
         </ul>
       </div>
     </div>
