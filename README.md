@@ -3,6 +3,7 @@
 This is the source code automating the processes of ArtStation - the first star station in the virtual world of Astronation. 
 ArtStation is showcasing and trading visual NFTs in the metaverse, while integrating several blockchains 
 
+https://astronation.world/stations/artstation
 https://astronation.world/entities/a883f9a1-b90a-4a0a-84a0-e4818e5ce217
 
 ## Key components
@@ -51,8 +52,8 @@ https://astronation.world/entities/a883f9a1-b90a-4a0a-84a0-e4818e5ce217
 1. *One time*: Link your Arweave wallet with arkb `arkb ws path\to\wallet.json`
 1. Update the version number in `package.json`
 1. Build the distribution package `npm run build`
-1. Upload the `dist` folder `arkb deploy ./dist --bundle --license MIT --tag-name App-Name --tag-value ArtStation --tag-name App-Version --tag-value 0.1.4`
-1. Commit the deployed url and build version `git commit -am"0.1.4 - https://arweave.net/IM1MpeGd0DM_zy359lq4EQ8us4WvsMYToG3-00mhUw0"`
+1. Upload the `dist` folder `arkb deploy ./dist --bundle --license MIT --tag-name App-Name --tag-value ArtStation --tag-name App-Version --tag-value 0.1.5`
+1. Commit the deployed url and build version `git commit -am"0.1.5 - https://arweave.net/EMDJs2sxKcrNsREPRRHAZU5SzBG2DG7zpQD-M6hkNCI"`
 
 ### Customize design
 
